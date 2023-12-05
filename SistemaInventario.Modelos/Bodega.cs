@@ -14,11 +14,11 @@ namespace SistemaInventario.Modelos
 
         [Required(ErrorMessage ="Nombre es Requerido")]
         [MaxLength(60, ErrorMessage ="No debe ser Maximo a 60 caracteres")]
-        public string? Nombre { get; set; }
+        public string Nombre { get; set; }
 
         [Required(ErrorMessage = "Descripcion es Requerido")]
         [MaxLength(100, ErrorMessage = "Descripcion debe ser Maximo 100 Caracteres")]
-        public string? Descripcion { get; set; }
+        public string Descripcion { get; set; }
 
         [Required(ErrorMessage = "Estado es Requerido")]
         public bool Estado { get; set; }
