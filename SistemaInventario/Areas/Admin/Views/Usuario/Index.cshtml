@@ -6,11 +6,13 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 class="text-primary">Lista de Categorias</h2>
+        <h2 class="text-primary">Lista de Usuarios</h2>
 
     </div>
     <div class="col-lg-6">
-        <a class="btn btn-outline-primary" asp-action="Upsert"><i class="bi bi-plus-square-fill"></i>Crear Nueva Categoria</a>
+        <a class="btn btn-outline-primary" asp-area="Identity" asp-page="/Account/Register">
+            <i class="bi bi-plus-square-fill"></i>Crear Nuevo Usuario
+        </a>
     </div>
 
 </div>
@@ -19,9 +21,11 @@
     <table id="tblDatos" class="table table-responsive table-hover">
         <thead class="table-dark">
             <tr>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Estado</th>
+                <th>Email</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
+                <th>Role</th>
                 <th></th>
             </tr>
 
@@ -31,5 +35,5 @@
 
 </div>
 @section Scripts {
-    <script src="~/js/categoria.js"></script>
+    <script src="~/js/usuario.js"></script>
 }
